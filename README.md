@@ -8,5 +8,6 @@ Ce projet propose une série d'outils interactifs dédiés aux rameurs et coachs
 
 Ratio Pelle Aviron : Un outil pour calculer le ratio des rames à partir de la longueur de la pelle et du levier intérieur.
 Calcul Pourcentage : Comparez les performances d'un rameur avec les records mondiaux en fonction de sa catégorie d'âge et de sexe.
-Convertisseur Watt/500 : Convertissez les watts en temps pour 500 mètres et vice versa. /newline 
+Convertisseur Watt/500 : Convertissez les watts en temps pour 500 mètres et vice versa.
+
 Es-tu Fort ? : Calculez le rapport poids-puissance à partir d'un test ergo de 2 km et du poids de l'utilisateur.
