@@ -67,8 +67,8 @@ elif pages == "Ratio Pelle Aviron 	:t-rex: ":
     st.header("Ratio Pelle Aviron")
     
     # Créer des champs d'entrée de nombre
-    nombre1 = st.number_input('Entrez la longueur de pelle', value=288)
-    nombre2 = st.number_input('Entrez le levier intérieur', value=88)
+    nombre1 = st.number_input('Entrez la longueur de pelle', value=288.0,format="%.1f")
+    nombre2 = st.number_input('Entrez le levier intérieur', value=88.0,format="%.1f")
 
     # Afficher les nombres entrés
     st.write(f'La longueur de pelle est de {nombre1}.')
