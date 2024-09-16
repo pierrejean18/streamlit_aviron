@@ -34,10 +34,8 @@ st.sidebar.title("Navigation")
 pages = st.sidebar.radio("Aller à", ["Accueil :crown: ", "Ratio Pelle Aviron 	:t-rex: ", "Calcul Pourcentage :medal: ", "Convertisseur Watt/500", "Es-tu Fort? :hatching_chick: "])
 
 if pages == "Accueil :crown: ":
-    # Page d'accueil
     st.title("Bienvenue sur mon site dédié aux rameurs :rowboat:")
 
-    # Section d'introduction
     st.header("À propos de moi")
     st.write("""
     Bonjour ! Je suis Pierre Jean, un passionné d'aviron et un étudiant en dernière année de Master 2 Économiste d'Entreprise, spécialisé dans l'analyse économique et statistique. Je suis ravi de partager mes connaissances et mes outils avec vous pour vous aider à améliorer vos performances en aviron.
@@ -45,16 +43,28 @@ if pages == "Accueil :crown: ":
 
     col1, col2 = st.columns(2)
 
-    # Affichez les images dans les colonnes respectives
     with col1:
-        st.image("images/univ.jpg", width=200)
+        try:
+            st.image("images/univ.jpg", width=200)
+        except Exception as e:
+            st.error(f"Erreur lors du chargement de l'image univ.jpg: {e}")
+
     with col2:
-        st.image("images/4-.jpg", width=400)
+        try:
+            st.image("images/4-.jpg", width=400)
+        except Exception as e:
+            st.error(f"Erreur lors du chargement de l'image 4-.jpg: {e}")
 
-    st.video("videos/8barre.mp4")
-    st.video("videos/vidéo_famille.mp4")
+    try:
+        st.video("videos/8barre.mp4")
+    except Exception as e:
+        st.error(f"Erreur lors du chargement de la vidéo 8barre.mp4: {e}")
 
-    # Section sur vos études
+    try:
+        st.video("videos/vidéo_famille.mp4")
+    except Exception as e:
+        st.error(f"Erreur lors du chargement de la vidéo vidéo_famille.mp4: {e}")
+
     st.header("Me contacter")
     st.write("""
     Email : pierre.jean@etu.univ-tours.fr  
